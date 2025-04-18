@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms&Inputs</title>
+</head>
+<body>
+    <form>
+        <label for="isim">Ad-Soyad</label>
+        <input required id="isim" type="text">
+        <label>E-Posta
+            <input type="email">
+        </label>
+        <br><br>
+        <input type="password" placeholder="Parola">
+        <br><br>
+        <input type="number" placeholder="Numara giriniz">
+        <br><br>
+        <input type="tel" placeholder="Telefon giriniz">
+        <br><br>
+        <input type="date"><!--gün-ay-yıl-->
+        <input type="month"><!--ay-yıl-->
+        <input type="week"><!--hafta-yıl-->
+        <input type="time"><!--saat-->
+        <br><br>
+        <input type="color">
+        <br><br>
+        <input type="range" step="50">
+        <input type="range" step="25">
+        <br><br>
+        <input value="en" type="checkbox">English
+        <input value="fr" type="checkbox">French
+        <input value="de" type="checkbox">Deutsch
+        <br><br>
+        <input value="k" name="gender" type="radio"> Kadın
+        <input value="e" name="gender" type="radio"> Erkek
+        <br><br>
+        <select>
+            <option>----</option>
+            <option value="tr">Türkiye</option>
+            <option>Italya</option>
+            <option>Amerika</option>
+        </select>
+        <br><br>
+        <textarea placeholder="mesajınız..." maxlength="5"></textarea>
+        <br><br>
+        <input type="file">
+        <br><br>
+        <input type="url" placeholder="url giriniz">
+        <br><br>
+        <input type="search" placeholder="search">
+        <br><br>
+        <input type="checkbox" required> <b><ins>Üyelik Sözleşmesini</ins></b> okudum, anladım kabul ediyorum.
+        <br><br>
+        <input type="reset" value="Temizle">
+        <input type="submit" value="Kayıt Ol">
+        <button>Submit_2</button>
+        <button type="button">Boş Buton</button>
+    </form>
+    <br><br><br><br><br><br>
+    <h3>Üyelik Formu</h3>
+    <!-- <form action="./01-Others.html" method="GET"> -->
+    <form action="mailto:erdem@erdem.com" method="POST">
+        <fieldset>
+            <legend>Genel Bilgiler</legend>
+            <input type="text" placeholder="Ad-Soyad">
+            <input type="email" placeholder="E-Posta">
+            <input type="date">
+        </fieldset>
+        <fieldset>
+            <legend>Eğitim Bilgileri</legend>
+            <input type="text" placeholder="Lise">
+            <input type="text" placeholder="Üniversite">
+            <input type="text" placeholder="Master">
+        </fieldset>
+        <fieldset>
+            <legend>İş Hayatı</legend>
+            <input type="text" placeholder="Şirket İsmi">
+            <input type="date">
+            <br><br>
+            <input type="text" placeholder="Şirket İsmi">
+            <input type="date">
+            <br><br>
+            <input type="text" placeholder="Şirket İsmi">
+            <input type="date">
+            <br><br>
+        </fieldset>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
